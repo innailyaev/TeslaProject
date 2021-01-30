@@ -1,0 +1,570 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+/* main styling */
+body{
+  height: 100vh; 
+  font-family: "GothamMedium";
+
+}
+p{
+  font-family: "GothamBook";
+  font-size: small;
+  line-height: 18px;
+  padding-top: 5px;
+}
+
+aside{
+  font-family: "GothamBook";
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+.scroll-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+/* utility classes */
+/* .container{
+  max-width: 1100px;
+  overflow: auto;
+} */
+
+.clr{
+  clear: both;
+}
+                                /* 1 SECTION */
+.bg1{
+  /* The image used */
+  background: url("/img/model-3-hero-desktop.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* NAV BAR */
+#navBar{
+  background:transparent;
+  color: white;
+  overflow: auto;
+}
+
+#navBar a{
+  color: white;
+}
+
+#navBar img{
+  float: left;
+  padding-top: 20px;
+  padding-left: 20px;
+  height: 30px;
+}
+
+#navBar ul{
+  list-style: none;
+  text-transform:uppercase;
+  font-size:14px;
+  line-height:17.5px;
+  vertical-align:baseline;
+  letter-spacing:normal;
+  word-spacing:0px;
+  margin:0px 10px;
+  padding:0px;
+  font-weight:400;
+  text-align:start;
+  text-indent:0px;
+}
+
+#navBar .middle ul li{
+  float: left;
+  padding-left: 20px; 
+}
+
+#navBar .middle{
+  padding-left: 27%;
+}
+
+#navBar .right-Side ul li{
+  float: right;
+  padding-right: 20px;
+}
+
+#navBar ul li a{
+  display: block;
+  padding-top: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Model 3 */
+.model3 h1{
+  font-size: 40px;
+  color: #ffffff;
+  font-weight:500;
+  padding-top:45px;
+  padding-left:45%;
+}
+
+/* SIDE BAR  */
+#sideBar{ 
+  margin-left:10px;
+  width: fit-content;
+  height: 300px;
+  
+}
+
+#sideBar ul{
+  list-style: none;
+  text-transform:uppercase;
+  cursor: pointer;
+
+}
+
+#sideBar a{
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+#sideBar #lines ul li .slide{
+  font-size:10px;
+  width:400;
+  line-height:21px;
+  font-style: normal;
+  padding-left: 4px;
+
+}
+
+#sideBar ul li a:hover,
+#sideBar ul li a.current{
+  font-weight: bolder;
+}
+
+.myDIV{
+  position: relative;
+  width: 50px;
+  height: 30px;
+  float: left;
+}
+
+.hide {
+  position:absolute;
+  display: none;
+  float:left;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+.myDIV:hover + .hide {
+  display: block;
+}
+
+.hide1{
+  padding-top:35px;
+}
+
+.hide2{
+  padding-top:65px;
+}
+    
+.hide3{
+  padding-top:95px;
+}
+    
+.hide4{
+  padding-top:125px;
+}
+.hide5{
+  padding-top:155px;
+}
+.hide6{
+  padding-top:185px;
+}
+.hide7{
+  padding-top:215px;
+}
+.hide8{
+  padding-top:245px;
+}
+    
+
+
+/* bottom bar */
+#bottom{
+    background:transparent;
+    color: white;
+    overflow: auto;  
+    margin-top: 45px;
+    padding-left: 355px;
+}
+
+#bottom .divs{
+  float:left;
+  height: 76px;
+  width: 160px;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+#bottom .speed{
+  border-right: solid white;
+  border-width:thin;
+  height: 75px;
+}
+
+#bottom span{
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 500;
+}
+
+#bottom .range1{
+  padding-left: 20px;
+}
+
+#bottom .range{
+  border-right: solid white;
+  border-width:thin;
+  height: 75px;
+}
+#bottom .dual{
+  height: 76px;
+  width: 130px;
+}
+
+
+#bottom .button {
+  background: transparent;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  font-family: "GothamMedium";
+  margin: 4px 2px;
+  cursor: pointer;
+  border: solid #fff;
+  border-radius: 20px;
+  width: 158px;
+  height: 40px;
+  transition: 0.4s;
+}
+#bottom .button:hover{
+  background-color: #fff;
+  color: #000000;
+
+}
+#bottom .btn{
+  margin-right: 320px;
+}
+
+/* footer */
+
+/* .downArrow {
+  background-color:#fff;
+  -webkit-mask: url("/img/download.svg") no-repeat center;
+} */
+
+footer{
+  /* border: solid #fff; */
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  padding-top: 20px;
+}
+
+@-webkit-keyframes wobble-vertical-on-hover {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+@keyframes wobble-vertical-on-hover {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.wobble-vertical-on-hover {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.wobble-vertical-on-hover:hover, .wobble-vertical-on-hover:focus, .wobble-vertical-on-hover:active {
+  -webkit-animation-name: wobble-vertical-on-hover;
+  animation-name: wobble-vertical-on-hover;
+  -webkit-animation-duration: 1s;
+  animation-duration:2s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count:infinite;
+  animation-iteration-count:infinite;
+}
+                                /* 2 SECTION  */
+#section2{
+  background-color: #F4F4F4;
+
+}
+.svgLogo{
+  padding-right: 280px;
+}
+
+.rightSide p{
+  color: #626468;
+  font-size: 18px;
+  font-weight:100;
+  margin-top: 10px;
+  margin-left: 45px;
+}
+
+.rightSide h4{
+  font-size: 28px;
+  margin-left: 45px;
+  font-weight: 100;
+  text-shadow: 3px 3px #F4F4F4;
+}
+
+#section2 #sideBar{
+  position: relative;
+  width:90px;
+  margin-top: 60px;
+}
+
+
+.rightSide #sideBar a{
+  color:#000000;
+  position: relative;
+  z-index: 1;
+}
+
+.rightSide pre{
+  position: absolute;
+  margin-top: 50px;  
+  padding-left: 20px;
+
+}
+
+.rightSide .text{
+  font-family: "GothamBook";
+  font-size: 14px;
+  color:#393c41;
+  line-height: 21px;
+}
+
+
+#section2 .rightSide {
+  background-color:#fff;
+  /* border: solid #333; */
+  width: 415px;
+  height: 625px;
+  float: left;
+  padding-top: 10px;
+}
+
+.div1{
+  margin-top: 30px;
+  float: left;
+  margin-left: 40px;
+  width: 158px;
+  height: 60px;
+}
+
+.div2{
+  margin-top: 30px;
+  float: left;
+  width: 158px;
+  height: 60px;
+}
+
+.button1 {
+  background: transparent;
+  color:#000000;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  font-family: "GothamMedium";
+  cursor: pointer;
+  border: solid #000000;
+  border-radius: 30px;
+  width: 43px;
+  height: 43px;
+  transition: 0.4s;
+  font-size: xx-large;
+}
+
+.nextTobtn{
+  font-size: 14px;
+  color:#626468;
+  font-weight:lighter;
+  float: right;
+  padding-top: 15px;
+  padding-right: 10px;
+}
+
+.button2 {
+  background: transparent;
+  color:#000000;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  font-family: "GothamMedium";
+  margin: 4px 2px;
+  cursor: pointer;
+  border: solid #000000;
+  border-radius: 20px;
+  width: 158px;
+  height: 40px;
+  transition: 0.4s;
+}
+.btn1:hover{
+  background-color:#000000;
+  color: #ffffff;
+}
+
+#section2 .leftSide{
+  /* border: solid #333; */
+  width:795px;
+  height: 625px;
+  float: left;
+}
+
+.leftsign{
+  float: right;
+  padding-top: 10px;
+  padding-right: 20px;
+}
+
+.bg2{
+  background: url("/img/model_3_safety.png");
+  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+                                    /* 3 SECTION */
+.sec3Top{
+  height: 62%;
+}
+
+.sec3Top #sideBar{
+  margin-top: 50px;
+}
+#section3 #sideBar{
+  position: relative;
+  width:90px;
+  float: left;
+}
+
+.bg3{
+  background: url("/img/hero-desktop.jpg");
+  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.sec3Top .svgLogo{
+  padding-right:90%;
+  margin-top: 10px;
+}
+
+#section3 #bottom{
+  width:max-content;
+  padding-left: 75px;
+  padding-top: 80px;
+}
+
+#section3 #bottom .divs{
+    height: 100px;
+    width: 328px;
+    padding-top: 10px;
+    padding-left: 30px;
+    margin-top: 100px;
+  }
+  
+.sec3Bottom{
+  height: 38%;
+}
+
+.sec3bottomRight{
+  height: 90%;
+  width: 40%;
+  float: left;
+  margin-right:100%;
+}
+
+.sec3bottomRight .per{
+  color: #171a20;
+  font-size: 17px;
+  padding-left: 200px;
+  padding-top: 45px;
+}
+
+.sec3bottomRight p{
+  padding-left: 200px;
+  font-size: 28px;
+  color:#171a20;
+  text-align: 36px;
+  font-family: "GothamMedium";
+}
+.sec3bottomRight .div1{
+  margin-left: 200px;
+
+}
+
+.sec3bottomLeft{
+  position: relative;
+  height: 90%;
+  width: 45%;
+  margin-left: 550px;
+}
+
+.sec3bottomLeft p{
+  position:absolute;
+  font-size: 14px;
+  color:#393c41;
+  text-align: 21px;
+  font-family:"GothamBook";
+  padding-top: 50px;
+}
